@@ -26,13 +26,13 @@ const App = (
             <Route exact path="/mental-health">
                 <MentalHealth/>
             </Route>
-            <Route exact path="homelessness">
+            <Route exact path="/homelessness">
                 <Homelessness/>
             </Route>
-            <Route exact path="legal-support">
+            <Route exact path="/legal-support">
                 <LegalSupport/>
             </Route>
-            <Route exact path="drugs-or-poisoning">
+            <Route exact path="/drugs-or-poisoning">
                 <DrugsOrPoisoning/>
             </Route>
         </div>

@@ -70,6 +70,13 @@ a {
     min-width: 50%;
   }
 
+  .back-button {
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+    
+  }
+
 .call911__section {
     background-color: #9d2323;
     border-radius: 8px;

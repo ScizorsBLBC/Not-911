@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const DrugsOrPoisoning = () => {
     return (
         <div className="Category background-profile text-profile">
-            <button>
+            <button className="back-button">
                 <Link to="/">
-                    Back
+                    ← Back
                 </Link>
             </button>
 
