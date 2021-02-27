@@ -41,8 +41,9 @@ a {
 
 .call911__button {
     border: none;
+    background-color: #010101;
     color:#9d2323;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -55,12 +56,14 @@ a {
 .call911__button a {
     color:#9d2323;
     font-weight: bold;
+    display: block;
 }
 
 .button {
+    
     border: none;
-    color:#010101;
-    padding: 20px;
+    background-color: #5a5c5c;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -70,11 +73,23 @@ a {
     min-width: 50%;
   }
 
+  .button a, .back-button a {
+    color:#010101;
+    font-weight: bold;
+    display: block;
+  }
+
   .back-button {
+    background-color: #5a5c5c;
+    color:#010101;
     border: none;
     padding: 5px;
     border-radius: 8px;
+    position: absolute;
+    top:5%;
+    left: 0;
     
+    transform: translateY(-50%);
   }
 
 .call911__section {
