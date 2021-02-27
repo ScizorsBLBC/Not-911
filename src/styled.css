@@ -8,7 +8,6 @@
     justify-content: space-between;
     min-height: 100vh;
     font-family: 'Ubuntu', sans-serif;
-    margin: 10px;
     position: absolute;
     top: 5%;
     left: 5%;
@@ -23,7 +22,6 @@ body {
 }
 
 .app-wrapper {
-    
     @media screen and (max-width: 45em) {
         width: 100%;
         height: 200px;
@@ -31,7 +29,7 @@ body {
 }
 
 .text-profile {
-    max-width: 95%;
+    max-width: 100%;
 }
 
 a {
@@ -41,7 +39,7 @@ a {
 
 .call911__button {
     border: none;
-    background-color: #010101;
+    background-color: 9da3a3;
     color:#9d2323;
     padding: 10px;
     text-align: center;
@@ -50,7 +48,7 @@ a {
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 8px;
-    min-width: 50%;
+    min-width: 70%;
 }
 
 .call911__button a {
@@ -60,9 +58,8 @@ a {
 }
 
 .button {
-    
     border: none;
-    background-color: #5a5c5c;
+    background-color: #9da3a3;
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -70,7 +67,7 @@ a {
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 8px;
-    min-width: 50%;
+    min-width: 60%;
   }
 
   .button a, .back-button a {
@@ -80,21 +77,21 @@ a {
   }
 
   .back-button {
-    background-color: #5a5c5c;
+    background-color: #9da3a3;
     color:#010101;
     border: none;
     padding: 5px;
     border-radius: 8px;
     position: absolute;
     top:5%;
-    left: 0;
-    
+    left: 5%;
     transform: translateY(-50%);
   }
 
 .call911__section {
     background-color: #9d2323;
     border-radius: 8px;
-    padding: 5px;
+    padding: 10px;
     font-weight: bold;
+    font-size: 130%;
 }

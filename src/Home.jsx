@@ -16,9 +16,9 @@ const Home = () => {
                         </a>
                     </button>
                 </section>
-                <h1>
+                <h3>
                     What do you need help with?
-                </h1>
+                </h3>
                 <div>
                     <button className="button">
                         <Link to="/violence">
