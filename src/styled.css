@@ -1,0 +1,78 @@
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin-right: -5%;
+    transform: translate(-5%, -5%);
+    text-align: center;
+}
+
+body {
+    background: #010101;
+    color: lightgray; 
+}
+
+.app-wrapper {
+    
+    @media screen and (max-width: 45em) {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.text-profile {
+    max-width: 95%;
+}
+
+a {
+    color: #010101;
+    text-decoration: none;
+}
+
+.call911__button {
+    border: none;
+    color:#9d2323;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    min-width: 50%;
+}
+
+.call911__button a {
+    color:#9d2323;
+    font-weight: bold;
+}
+
+.button {
+    border: none;
+    color:#010101;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    min-width: 50%;
+  }
+
+.call911__section {
+    background-color: #9d2323;
+    border-radius: 8px;
+    padding: 5px;
+    font-weight: bold;
+}

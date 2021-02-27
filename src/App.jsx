@@ -5,12 +5,15 @@ import { BrowserRouter } from "react-router-dom";
 
 import Home from "./Home";
 import Violence from "./Violence";
+import MentalHealth from "./MentalHealth";
+import Homelessness from "./Homelessness";
+import LegalSupport from "./LegalSupport";
+import DrugsOrPoisoning from "./DrugsOrPoisoning";
 
-import GlobalStyled from "./GlobalStyled";
 
 const App = (
     <BrowserRouter>    
-        <div>
+        <div className="app-wrapper">
             <h1>
                 {/* Not 911 Make an icon? */}
             </h1>
@@ -19,6 +22,18 @@ const App = (
             </Route>
             <Route exact path="/violence">
                 <Violence/>
+            </Route>
+            <Route exact path="/mental-health">
+                <MentalHealth/>
+            </Route>
+            <Route exact path="homelessness">
+                <Homelessness/>
+            </Route>
+            <Route exact path="legal-support">
+                <LegalSupport/>
+            </Route>
+            <Route exact path="drugs-or-poisoning">
+                <DrugsOrPoisoning/>
             </Route>
         </div>
     </BrowserRouter>
