@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import Violence from "./Violence";
 
-// import GlobalStyled from "./GlobalStyled";
+import GlobalStyled from "./GlobalStyled";
 
 const App = (
     <BrowserRouter>    
