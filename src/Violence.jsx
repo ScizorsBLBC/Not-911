@@ -7,7 +7,7 @@ const dataArray = [
     {
         category: "violence",
         header: "24 Hour Access",
-        name: "Safe Horizons 24 hour Domestic Violence Hotline",
+        name: "Safe Horizons 24 Hour Domestic Violence Hotline",
         phoneNumber: "1-800-621-4673",
         callNumber: "18006214673"
     },

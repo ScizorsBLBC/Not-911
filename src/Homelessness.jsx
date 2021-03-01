@@ -13,7 +13,7 @@ const dataArray = [
     },
     {
         category: "homelessness",
-        header: "Daily meals 8-9am, 12-1:30pm, Dinner served M-F 4-5:30pm",
+        header: "Daily Meals 8-9am, 12-1:30pm, Dinner Served M-F 4-5:30pm",
         name: "GLIDE",
         phoneNumber: "415-674-6000",
         callNumber: "4156746000"

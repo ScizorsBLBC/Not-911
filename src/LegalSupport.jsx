@@ -14,7 +14,7 @@ const dataArray = [
     {
         category: "legal-support",
         header: "24 Hour Access",
-        name: "Safe Horizon Crime Victrim Hotline",
+        name: "Safe Horizon Crime Victim Hotline",
         phoneNumber: "1-866-689-4357",
         callNumber: "18666894357"
     }

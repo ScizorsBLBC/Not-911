@@ -14,7 +14,7 @@ const dataArray = [
     {
         category: "mental-health",
         header: "24 Hour Access",
-        name: "Disaster Distress Natrioanl Helpline (SAMHSA)",
+        name: "Disaster Distress National Helpline (SAMHSA)",
         phoneNumber: "1-800-985-5990",
         callNumber: "18009855990"
     },
