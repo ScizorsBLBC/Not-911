@@ -14,9 +14,9 @@ import DrugsOrPoisoning from "./DrugsOrPoisoning";
 const App = (
     <BrowserRouter>    
         <div className="app-wrapper">
-            <h1>
-                {/* Not 911 Make an icon? */}
-            </h1>
+            {/* <header>
+                add persistant header
+            </header> */}
             <Route exact path="/">
                 <Home/>
             </Route>

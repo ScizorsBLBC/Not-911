@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import CallIcon from "./assets/call-icon.svg";
+
 const Home = () => {
     return (
         <div className="Home background-profile">
@@ -10,15 +12,15 @@ const Home = () => {
                         Life-Threatening emergency?
                     </p>
                     {/* Make confirmation button state change */}
-                    <button className="button" className="call911__button">
-                        <a href="tel:4158120875">
-                            Call 911
+                    <button  className="button call911__button">
+                        <a href="tel:911">
+                            <CallIcon/> Call 911
                         </a>
                     </button>
                 </section>
-                <h3>
+                <p>
                     What do you need help with?
-                </h3>
+                </p>
                 <div>
                     <button className="button">
                         <Link to="/violence">

@@ -3,99 +3,128 @@
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
-    height: 100%;
-    width: 99%;
     justify-content: space-between;
     min-height: 100vh;
     font-family: 'Ubuntu', sans-serif;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    margin-right: -5%;
-    transform: translate(-5%, -5%);
     text-align: center;
+    font-size: large;
+    font-weight: bold;
 }
 
 body {
-    background: #010101;
-    color: lightgray; 
+    --black: #010101;
+    --red: #9d2323;
+    --grey: lightgrey;
+    background: rgb(240, 240, 240);
+    color: var(--black);
 }
 
-.app-wrapper {
-    @media screen and (max-width: 45em) {
-        width: 100%;
-        height: 200px;
-    }
-}
-
-.text-profile {
-    max-width: 100%;
-}
+/* @media (prefers-color-scheme: dark) {
+    body {
+        --black: #010101;
+        --red: #9d2323;
+        --grey: lightgrey;
+        color: white;
+        background: var(--black);
+} */
 
 .header-profile {
-    color: #9d2323;
+    color: var(--red);
 }
 
 a {
-    color: #010101;
+    color: var(--red);
     text-decoration: none;
 }
 
-.call911__button {
+.button {
     border: none;
-    background-color: 9da3a3;
-    color:#9d2323;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+    background-color: rgb(173, 173, 173);
     padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    min-width: 65%;
+
+  }
+
+  .button a, .back-button a {
+    color:var(--black);
+    font-weight: bold;
+    display: block;
+  }
+
+  .back-button {
+    background-color: var(--grey);
+    color: var(--black);
+    border: none;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+    padding: 5px;
+    border-radius: 8px;
+  }
+
+.back-button-div {
+      text-align: left;
+      padding: 10 20px;
+  }
+
+.call911__section {
+    background-color: var(--red);
+    border-radius: 8px;
+    border-bottom: 3px solid rgb(102, 3, 3);
+    padding: 10px;
+    margin: 10px;
+}
+
+.call911__headline {
+    color: white;
+}
+
+.call911__button {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     margin: 4px 2px;
     border-radius: 8px;
     min-width: 70%;
 }
 
 .call911__button a {
-    color:#9d2323;
-    font-weight: bold;
+    color:var(--black);
     display: block;
 }
 
-.button {
-    border: none;
-    background-color: #9da3a3;
+.call911__button svg {
+    height: 15px;
+    width: 15px;
+}
+
+.organization-tile {
     padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    margin: 10px;
+    background: lightgrey;
     border-radius: 8px;
-    min-width: 60%;
-  }
+    border-bottom: 3px solid darkgrey;
+}
 
-  .button a, .back-button a {
-    color:#010101;
-    font-weight: bold;
-    display: block;
-  }
+.organization-tile svg {
+    height: 15px;
+    width: 15px;
+}
 
-  .back-button {
-    background-color: #9da3a3;
-    color:#010101;
-    border: none;
-    padding: 5px;
-    border-radius: 8px;
-    position: absolute;
-    top:5%;
-    left: 5%;
-    transform: translateY(-50%);
-  }
+.organization-tile svg path{
+    fill: var(--red);
+}
 
-.call911__section {
-    background-color: #9d2323;
-    border-radius: 8px;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 130%;
+.organization-tile .call-button {
+    max-width: 100px;
+    min-width: 100px;
+    width: 100%;
 }
