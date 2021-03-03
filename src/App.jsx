@@ -4,11 +4,11 @@ import { Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 
 import Home from "./Home";
-import Violence from "./Violence";
-import MentalHealth from "./MentalHealth";
-import Homelessness from "./Homelessness";
-import LegalSupport from "./LegalSupport";
-import DrugsOrPoisoning from "./DrugsOrPoisoning";
+import Violence from "./violence/Violence";
+import MentalHealth from "./mental-health/MentalHealth";
+import Homelessness from "./homelessness/Homelessness";
+import LegalSupport from "./legal-support/LegalSupport";
+import DrugsOrPoisoning from "./drugs-or-poisoning/DrugsOrPoisoning";
 
 
 const App = (

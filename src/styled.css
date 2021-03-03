@@ -19,14 +19,15 @@ body {
     color: var(--black);
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     body {
         --black: #010101;
         --red: #9d2323;
         --grey: lightgrey;
         color: white;
         background: var(--black);
-} */
+    }
+}
 
 .header-profile {
     color: var(--red);

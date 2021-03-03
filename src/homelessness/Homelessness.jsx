@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import OrganizationTile from "./OrganizationTile";
-import organizationArray, { VIOLENCE } from "./OrganizationList"; 
+import OrganizationTile from "../components/OrganizationTile";
+import organizationArray, {HOMELESSNESS} from "../components/OrganizationList"; 
 
-const Violence = () => {
+const Homelessness = () => {
     return (
         <div className="Category background-profile text-profile">
             <div className="back-button-div">
@@ -16,7 +16,7 @@ const Violence = () => {
             </div>
                 {organizationArray
                     .filter((orgObj) => {
-                        return orgObj.category.includes(VIOLENCE)
+                        return orgObj.category.includes(HOMELESSNESS)
                     })
                     .map((orgObj) => {
                         return (
@@ -27,4 +27,4 @@ const Violence = () => {
     )
 }
 
-export default Violence;
+export default Homelessness;

@@ -1,6 +1,6 @@
 import React from "react"
 
-import CallIcon from "./assets/call-icon.svg";
+import CallIcon from "../assets/call-icon.svg";
 
 const OrganizationTile = (props) => {
     return (
