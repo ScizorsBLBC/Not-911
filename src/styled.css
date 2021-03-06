@@ -160,13 +160,27 @@ header {
     background: var(--invertible-white);
 }
 
+.dark-mode-button svg {
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+}
+.dark-mode-button {
+    border: none;
+    border-radius: 8px;
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
+    background-color: rgb(173, 173, 173);
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+}
+
 .NavBar svg {
     height: 30px;
     width: 30px;
     fill: var(--invertible-black);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     vertical-align: middle;
 }
 

@@ -1,18 +1,20 @@
 import React from "react";
 
+import DarkModeIcon from "/assets/dark-mode-icon.svg";
+import LightModeIcon from "/assets/light-mode-icon.svg";
 
 const Settings = (props) => {
     return (
         <div>
-            Toggle Dark Mode 
-            <button className="button" onClick={() => {
+            Toggle Dark / Light Mode 
+            <button className="dark-mode-button" onClick={() => {
                 if (props.isDarkMode === true) {
                     props.setIsDarkMode(false);
                 } else {
                     props.setIsDarkMode(true);
                 }
                 }}>
-                {props.isDarkMode === true ? "Dark Mode On" : "Dark Mode Off"}
+                {props.isDarkMode === true ? <LightModeIcon/> : <DarkModeIcon/> }
             </button>
         </div>
     )
