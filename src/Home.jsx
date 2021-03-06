@@ -18,9 +18,9 @@ const Home = () => {
                         </a>
                     </button>
                 </section>
-                <p>
+                <b>
                     What do you need help with?
-                </p>
+                </b>
                 <div>
                     <button className="button">
                         <Link to="/violence">

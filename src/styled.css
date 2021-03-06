@@ -1,40 +1,49 @@
 #root {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-size: large;
-    font-weight: bold;
+}
+
+.aboutText {
+    text-align: left;
+    padding: 5%;
+}
+
+.app-wrapper {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin-bottom: 60px; 
+    margin-top: 60px;
+    
 }
 
 body {
     --black: #010101;
+    --invertible-black: #010101;
     --red: #9d2323;
     --grey: lightgrey;
-    background: rgb(240, 240, 240);
-    color: var(--black);
+    --white: white;
+    --invertible-white: white;
+    background:var(--invertible-white);
+    color: var(--invertible-black);
 }
 
-/* @media (prefers-color-scheme: dark) {
-    body {
-        --black: #010101;
-        --red: #9d2323;
-        --grey: lightgrey;
-        color: white;
+.dark-mode {
+        --invertible-black: white;
+        --invertible-white: #010101;
+        color: var(--white);
         background: var(--black);
     }
-} */
 
 .header-profile {
     color: var(--red);
 }
 
 a {
-    color: var(--red);
+    color: var(--invertible-black);
     text-decoration: none;
 }
 
@@ -70,8 +79,11 @@ a {
   }
 
 .back-button-div {
-      text-align: left;
-      padding: 10 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: left;
+    padding: 10 20px;
+    background: var(--invertible-white);
   }
 
 .call911__section {
@@ -83,6 +95,7 @@ a {
 }
 
 .call911__headline {
+    font-weight: bold;
     color: white;
 }
 
@@ -110,11 +123,13 @@ a {
 }
 
 .organization-tile {
+    font-weight: bold;
     padding: 10px;
     margin: 10px;
     background: lightgrey;
     border-radius: 8px;
     border-bottom: 3px solid darkgrey;
+    color: var(--black); 
 }
 
 .organization-tile svg {
@@ -130,4 +145,45 @@ a {
     max-width: 100px;
     min-width: 100px;
     width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    padding: 20px;
+    background: var(--invertible-white);
+}
+
+.NavBar svg {
+    height: 30px;
+    width: 30px;
+    fill: var(--invertible-black);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    vertical-align: middle;
+}
+
+footer {
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: var(--invertible-white);
+    color: var(--invertible-black);
 }
