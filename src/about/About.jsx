@@ -19,7 +19,7 @@ const About = () => {
                 Emergent Works interrupts the prison cycle by creating pathways into high-paying jobs in technology for formerly incarcerated / justice-involved people.
             </p>
             <h4>
-                Built by Emergent Works
+                Built by Emergent Works <a href="https://emergentworks.org/"> www.emergentworks.org</a>
             </h4>
             <p>
                 Scizors, Mark Hansen

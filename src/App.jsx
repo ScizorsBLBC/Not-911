@@ -16,12 +16,14 @@ import Settings from "./settings/Settings";
 
 
 const AppComponent = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('isDarkMode') === 'true');
     return (
         <BrowserRouter>    
         <div className={isDarkMode === true ? "app-wrapper dark-mode" : "app-wrapper"} >
             <header>
-                NOT 911
+                <h1>
+                    NOT 911 San Francisco Bay Area
+                </h1>
             </header>
             <Route exact path="/">
                 <Home/>
