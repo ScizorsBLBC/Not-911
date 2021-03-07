@@ -7,7 +7,7 @@ const About = () => {
                 About Not911
             </h3>
             <p>
-                Not 911 is a list of community-based groups that offer preventative services and strategies for issues related to mental health, homelessness, legal aid, and other topics.
+                Not 911 is a list of community-based groups that offer preventative services and strategies for issues related to mental health, homelessness, legal aid, and other topics for the San Francisco Bay Area.
             </p>
             <b>
                 These are not organizations that should be used in a life-threatening emergency. If someone is experiencing a life-threatening emergency, call 911 immediately.
