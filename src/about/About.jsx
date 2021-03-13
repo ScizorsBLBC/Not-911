@@ -26,7 +26,10 @@ const About = () => {
                 Built by Emergent Works <a href="https://emergentworks.org/"> www.emergentworks.org</a>
             </h4>
             <p>
-                Scizors, Mark Hansen
+                Scizors -  <a href="https://www.scizors.wtf/"> www.scizors.wtf</a>
+            </p>
+            <p>
+                Mark Hansen -  <a href="https://markthemark.com/"> www.markthemark.com</a>
             </p>
             <p>
                 Icons used on this site were created by P Thanga Vignesh, Ravindra Kalkani, Prasanta Kr Dutta, i cons, & Debi Alpa Nugraha from the Noun Project.  <a href="https://thenounproject.com/"> www.thenounproject.com</a>
