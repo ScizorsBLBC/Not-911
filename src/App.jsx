@@ -13,10 +13,17 @@ import NavBar from "./components/NavBar";
 import About from "./about/About";
 import Settings from "./settings/Settings";
 
-
-
+/**
+ * <App/> 
+ * Entry point for application where the <Route> is defined. 
+ * When a user toggles Dark or Light mode on Settings.jsx this is where the where the css classname toggle happens & the state is saved.
+ * Default value is retrieved via localStorage.getItem.
+ */
 const AppComponent = () => {
+   // SETUP
     const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('isDarkMode') === 'true');
+    
+    // RENDER
     return (
         <BrowserRouter>    
         <div className={isDarkMode === true ? "app-wrapper dark-mode" : "app-wrapper"} >
@@ -25,6 +32,8 @@ const AppComponent = () => {
                     NOT 911 San Francisco Bay Area
                 </h1>
             </header>
+            
+            {/* ROUTING */}
             <Route exact path="/">
                 <Home/>
             </Route>
@@ -49,13 +58,16 @@ const AppComponent = () => {
             <Route exact path="/settings">
                 <Settings isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
             </Route>
+            
+            {/* FIXED NAVBAR */}
             <NavBar/>
         </div>
     </BrowserRouter>
     )
 }
+
 const App = (
-        <AppComponent/>
+    <AppComponent/>
 )
 
 render(App, document.querySelector("#root"));

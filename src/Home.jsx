@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 
 import CallIcon from "./assets/call-icon.svg";
 
+/**
+ * <Home/>
+ * Renders home page with a call 911 button and links to each category page. 
+ * @returns {Function}
+ */
 const Home = () => {
     return (
         <div className="Home background-profile">
@@ -11,7 +16,7 @@ const Home = () => {
                     <p className="call911__headline">
                         Life-Threatening emergency?
                     </p>
-                    {/* Make confirmation button state change */}
+                    {/* TODO: Make confirmation button state change*/}
                     <button  className="button call911__button">
                         <a href="tel:911">
                             <CallIcon/> Call 911

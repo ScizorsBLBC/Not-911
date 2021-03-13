@@ -2,6 +2,17 @@ import React from "react"
 
 import CallIcon from "../assets/call-icon.svg";
 
+/**
+ * Renders a <OrganizationTile/> component for each organization in the data array which shows the organizations hours of operation, name, phone number, and renders a call <button/> component.
+ * References OrganizationList.js for the values of the objects in the array of data.
+ * @param props
+ * @param props.organization - the organization object.
+ * @param props.organization.header - the hours of operation of the organization.
+ * @param props.organization.name - the name of the oraganization.
+ * @param props.organization.phoneNumber - the phone number of the organization formatted for human readability with acronymns if applicable.
+ * @param props.organization.callNumber - the phone number of the organization formatted for the html anchor link for the call button.
+ * @returns {Component} 
+ */
 const OrganizationTile = (props) => {
     return (
         <div className="organization-tile">
@@ -22,4 +33,5 @@ const OrganizationTile = (props) => {
         </div>
     )
 };
+
 export default OrganizationTile;

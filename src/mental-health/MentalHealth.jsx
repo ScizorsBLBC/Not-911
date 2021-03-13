@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import OrganizationTile from "../components/OrganizationTile";
 import organizationArray, { MENTAL_HEALTH } from "../components/OrganizationList"; 
 
+/**
+ * <MentalHealth/> 
+ * Look to Violence.jsx for documentation as they share functionality.
+ * @returns {Function}
+ */
 const MentalHealth = () => {
     return (
         <div className="Category background-profile text-profile">

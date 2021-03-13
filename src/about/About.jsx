@@ -1,5 +1,9 @@
 import React from "react";
 
+/**
+ * Renders <About/> page. 
+ * @returns {Function}
+ */
 const About = () => {
     return (
         <div className="aboutText">

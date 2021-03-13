@@ -5,6 +5,10 @@ import AboutIcon from "/assets/about-icon.svg";
 import HomeIcon from "/assets/home-icon.svg";
 import SettingsIcon from "/assets/settings-icon.svg";
 
+/**
+ * Renders a persistant <NavBar/> at the bottom of the screen.
+ * @returns {Function}
+ */
 const NavBar =() => {
     return (
         <footer className="NavBar">

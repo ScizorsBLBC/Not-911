@@ -4,6 +4,11 @@ export const LEGAL_SUPPORT = "legal-support";
 export const HOMELESSNESS = "homelessness";
 export const DRUGS_OR_POISONING = "drugs-or-poisoning";
 
+/**
+ * An array of data for each organization. One place this data is being used is on the <OrganizationTile/> component in OrganizationTile.jsx
+ * @type {array}
+ * @const 
+ */
 const organizationArray = [
     {
         category: [VIOLENCE], 
