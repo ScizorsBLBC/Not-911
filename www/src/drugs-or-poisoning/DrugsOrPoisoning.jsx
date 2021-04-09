@@ -1,15 +1,30 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import OrganizationTile from "../components/OrganizationTile";
-import organizationArray, { DRUGS_OR_POISONING } from "../components/OrganizationList"; 
+import { DRUGS_OR_POISONING } from "../components/OrganizationList"; 
+import fetchOrganizations from "../components/FetchOrganizations";
 
 /**
  * <DrugsOrPoisoning/> 
  * Look to Violence.jsx for documentation as they share functionality.
  * @returns {Function}
  */
+
 const DrugsOrPoisoning = () => {
+    const [organizationArray, setOrganizationArray] = useState([]);
+    //fetch array and set to state
+    
+    useEffect(() => {
+        fetchOrganizations()
+            .then((fetchedOrganizationArray) => {
+                setOrganizationArray(fetchedOrganizationArray);
+            });
+    }, []);
+            
+    console.log(organizationArray);            
+
+    // Render    
     return (
         <div className="Category background-profile text-profile">
             <div className="back-button-div">
