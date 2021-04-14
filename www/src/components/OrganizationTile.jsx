@@ -3,8 +3,9 @@ import React from "react"
 import CallIcon from "../assets/call-icon.svg";
 
 /**
- * Renders a <OrganizationTile/> component for each organization in the data array which shows the organizations hours of operation, name, phone number, and renders a call <button/> component.
- * References OrganizationList.js for the values of the objects in the array of data.
+ * Renders <OrganizationTile/> component for each organization in the data array which shows the organizations hours of operation, name, phone number, and renders a call <button/> component.
+ * References OrganizationCategories.js for the values of the objects in the array of data fetched from Airtable.
+ 
  * @param props
  * @param props.organization - the organization object.
  * @param props.organization.header - the hours of operation of the organization.

@@ -1,4 +1,8 @@
-// console.log(AIRTABLE_KEY);
+/**
+ * A modular component used to fetch data from Airtable and return an array of opbjects in JSON format. References .env file for AIRTABLE_KEY.
+ * @returns {Function} 
+ */
+
 console.log(process.env.AIRTABLE_KEY);
 
 const fetchOrganizations = () => {

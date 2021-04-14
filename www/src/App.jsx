@@ -4,14 +4,11 @@ import { Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 
 import Home from "./Home";
-import Violence from "./violence/Violence";
-import MentalHealth from "./mental-health/MentalHealth";
-import Homelessness from "./homelessness/Homelessness";
-import LegalSupport from "./legal-support/LegalSupport";
-import DrugsOrPoisoning from "./drugs-or-poisoning/DrugsOrPoisoning";
+import { VIOLENCE, MENTAL_HEALTH, LEGAL_SUPPORT, HOMELESSNESS, DRUGS_OR_POISONING } from "./components/OrganizationCategories";
 import NavBar from "./components/NavBar";
 import About from "./about/About";
 import Settings from "./settings/Settings";
+import CategoryPage from "./components/CategoryPage";
 
 /**
  * <App/> 
@@ -38,19 +35,19 @@ const AppComponent = () => {
                 <Home/>
             </Route>
             <Route exact path="/violence">
-                <Violence/>
+                <CategoryPage category={VIOLENCE}/>
             </Route>
             <Route exact path="/mental-health">
-                <MentalHealth/>
+                <CategoryPage category={MENTAL_HEALTH}/>
             </Route>
             <Route exact path="/homelessness">
-                <Homelessness/>
+                <CategoryPage category={HOMELESSNESS}/>
             </Route>
             <Route exact path="/legal-support">
-                <LegalSupport/>
+                <CategoryPage category={LEGAL_SUPPORT}/>
             </Route>
             <Route exact path="/drugs-or-poisoning">
-                <DrugsOrPoisoning/>
+                <CategoryPage category={DRUGS_OR_POISONING}/>
             </Route>
             <Route exact path="/about">
                 <About/>

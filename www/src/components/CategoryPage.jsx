@@ -1,30 +1,32 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import OrganizationTile from "../components/OrganizationTile";
-import { DRUGS_OR_POISONING } from "../components/OrganizationList"; 
 import fetchOrganizations from "../components/FetchOrganizations";
 
 /**
- * <DrugsOrPoisoning/> 
- * Look to Violence.jsx for documentation as they share functionality.
- * @returns {Function}
+ * <CategoryPage/> 
+ * A reusable component that renders the category pages  that the <OrganizationTile/> renders each tile on.  Uses the fetched array of data from Airtable fitlered by category. The result of that is used with the .map method that takes data objects and returns React components. Returns a div with each Organization Tile.
+ * @param props
+ * @param props.category -  the category of the organization which is used to filter out organizations.
+ * @returns {Component} 
  */
 
-const DrugsOrPoisoning = () => {
+const CategoryPage = (props) => {
     const [organizationArray, setOrganizationArray] = useState([]);
-    //fetch array and set to state
-    
+    // Fetch array and set to state
     useEffect(() => {
         fetchOrganizations()
             .then((fetchedOrganizationArray) => {
                 setOrganizationArray(fetchedOrganizationArray);
             });
     }, []);
-            
-    console.log(organizationArray);            
 
-    // Render    
+    console.log(organizationArray);
+    
+    // Render (Organization Tile componenet used here)
+    // Map and filter array via props
+
     return (
         <div className="Category background-profile text-profile">
             <div className="back-button-div">
@@ -36,7 +38,7 @@ const DrugsOrPoisoning = () => {
             </div>
                 {organizationArray
                     .filter((orgObj) => {
-                        return orgObj.category.includes(DRUGS_OR_POISONING)
+                        return orgObj.category.includes(props.category)
                     })
                     .map((orgObj) => {
                         return (
@@ -47,4 +49,4 @@ const DrugsOrPoisoning = () => {
     )
 }
 
-export default DrugsOrPoisoning;
+export default CategoryPage;
